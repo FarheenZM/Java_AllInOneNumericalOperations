@@ -16,5 +16,6 @@ public class Controller {
             model.put("template", "templates/home.vtl");
             return new ModelAndView(model, "templates/layout.vtl");
         }, velocityTemplateEngine);
+        
     }
 }
