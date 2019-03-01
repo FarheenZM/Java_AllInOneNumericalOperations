@@ -1,10 +1,27 @@
 <div>
 
-    <form action="/reverse" method="post">
-        <label for="numInput">Enter a number : </label>
-        <input type="text" name="numInput" required="required"/>
+<div>
 
-        <input type="submit" value="REVERSE" class="button" id="button-reverse"/>
+    <label>Enter a number : </label>
+
+    <form action="/" method="post">
+
+        <input type="text" name="numInput" required="required"/>
+        <input type="submit" name="click" value="RReverse" class="button" id="button-reverse"/>
+        <input type="submit" name="click" value="PPalindrome"/>
+
     </form>
+
+</div>
+
+<div>
+
+    #if ($test.toString() == "RReverse")
+    <p>Reverse of $input is $reverse</p>
+    #elseif ($test.toString() == "PPalindrome")
+    <p>Palindrome is $palindrome</p>
+    #end
+
+</div>
 
 </div>
