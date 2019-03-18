@@ -24,4 +24,11 @@ public class NumericalOperations {
             return false;
         }
     }
+
+    public static int factorial(int number){
+        if(number == 0){
+            return 1;
+        }
+        return number * factorial(number-1);
+    }
 }

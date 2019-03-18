@@ -32,6 +32,8 @@ public class Controller {
                 model.put("reverse", NumericalOperations.reverse(number));
             }else if(model.get("test").equals("PPalindrome")) {
                 model.put("palindrome", NumericalOperations.palindrome(number));
+            }else if(model.get("test").equals("FFactorial")){
+                model.put("factorial", NumericalOperations.factorial(number));
             }
 
 //            if(request.queryParams("click").equals("RReverse")){
